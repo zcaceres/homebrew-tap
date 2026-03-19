@@ -2,25 +2,25 @@ class Builtwith < Formula
   desc "Query the BuiltWith API from your app, terminal, or AI agent"
   homepage "https://builtwith.zach.dev"
   license "MIT"
-  version "3.2.0"
+  version "3.2.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zcaceres/builtwith-api/releases/download/v#{version}/builtwith-darwin-arm64"
-      sha256 "14897b5286388adcfed00ce13cd533b86714b3001cf30d8832d5fa79ae476258"
+      sha256 "c7bf573204742f66891ae260190a01a1b014bfb7d84e673b917d50797d13fc1a"
     else
       url "https://github.com/zcaceres/builtwith-api/releases/download/v#{version}/builtwith-darwin-x64"
-      sha256 "819878ebb7404c3ce87e32a94a27935186c0b154b258f156bab79d33369465e5"
+      sha256 "bf8736463eae27f0ed2e3224a090e575484d062e66b3ea560c0c91db61fef2a2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/zcaceres/builtwith-api/releases/download/v#{version}/builtwith-linux-arm64"
-      sha256 "f3952ee49e817826348a1e1a364d86e3d3366d4879ee9bac90cebb245f52ecbb"
+      sha256 "32db1ae758b31da0fe6e312dc1f3daf486f75680d65ff04c77440ee305f5f77b"
     else
       url "https://github.com/zcaceres/builtwith-api/releases/download/v#{version}/builtwith-linux-x64"
-      sha256 "dc480b214dc8ceabd1ae026d7c1a3b4eba3c61c8db7a17b5fcc9602af525c583"
+      sha256 "f423ec96c3a74aff86bc7532623fee028e570827f00e53745181b34007322f32"
     end
   end
 
