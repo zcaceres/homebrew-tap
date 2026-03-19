@@ -1,5 +1,5 @@
 class Builtwith < Formula
-  desc "Query the BuiltWith API from your terminal"
+  desc "Query the BuiltWith API from your app, terminal, or AI agent"
   homepage "https://builtwith.zach.dev"
   license "MIT"
   version "3.2.0"
