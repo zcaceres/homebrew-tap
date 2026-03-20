@@ -2,25 +2,25 @@ class SpotifyCli < Formula
   desc "Agent (and human) friendly CLI for Spotify. JSON output. PKCE auth."
   homepage "https://spotify-cli.zach.dev"
   license "MIT"
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zcaceres/spotify-cli/releases/download/v#{version}/spotify-darwin-arm64"
-      sha256 "42ae4e3f2777d87c4d13ec6ec6c7fccbb0e79f17cb14f275fa412a4671db0348"
+      sha256 "9d104a061e4038869e2569862541e0c131eeb652da1651118b88ee6562d550c2"
     else
       url "https://github.com/zcaceres/spotify-cli/releases/download/v#{version}/spotify-darwin-x64"
-      sha256 "1053757369165d997c2d65026b51bcb6132d610650b76198b7e1ececefc034bf"
+      sha256 "832accfeb996eaa8b3950659e40a4b42e3f6ecb30123d65f4cbc42e54fcc58b5"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/zcaceres/spotify-cli/releases/download/v#{version}/spotify-linux-arm64"
-      sha256 "68481b58c18f61b266f6475e288a519be28cd6a4191bbba72780ae38e9e9c7a2"
+      sha256 "b04142505adb6588ad82a6c12a14690bb7ce5bbc281fd30eaf002a1daf46ef02"
     else
       url "https://github.com/zcaceres/spotify-cli/releases/download/v#{version}/spotify-linux-x64"
-      sha256 "700f5c6dbcb60a91876307f23e38dfc8e10a0d44021985419defccd8c87848d4"
+      sha256 "5c6daf590bb4ccad626196279ff5e214c4ba544cf289d43faefde7db2fc015bb"
     end
   end
 
